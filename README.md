@@ -12,5 +12,10 @@ After that you can copy the training code plus:
 Do training as standard nnUNet as specified here: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/how_to_use_nnunet.md
 The only difference is to specifiy the PGPS/PGPS+/RPSS trainer:
 ```
+# for PGPS
 nnUNetv2_train DATASET_NAME_OR_ID 3d_fullres FOLD -tr nnUNetTrainer_PGPS
+# for PGPS+
+nnUNetv2_train DATASET_NAME_OR_ID 3d_fullres FOLD -tr nnUNetTrainer_PGPS+
+# for RPSS
+nnUNetv2_train DATASET_NAME_OR_ID 3d_fullres FOLD -tr nnUNetTrainer_RPSS
 ```
