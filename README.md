@@ -22,3 +22,6 @@ nnUNetv2_train DATASET_NAME_OR_ID 3d_fullres FOLD -tr nnUNetTrainer_PGPS+
 # for RPSS
 nnUNetv2_train DATASET_NAME_OR_ID 3d_fullres FOLD -tr nnUNetTrainer_RPSS
 ```
+uncomment codecarbon parts if you do not want to track C02-equivalents!
+\\
+For more information about codecarbon check their website: https://mlco2.github.io/codecarbon/installation.html
