@@ -1,8 +1,10 @@
 # Code for Progressive Growing of Patch Size Curriculum implemented into the nnUNet framework.
 
-**Curriculum Learning Trainer Script Implemented in nnunetv2=2.0.0
-The configuration manager of nnUNetv2 was changed in newer versions and is not yet compatible with this nnUnet trainer script!!!
-Please use nnunetv2=2.0.0 for this repo!**
+**Curriculum Learning Trainer Script Implemented in nnunetv2=2.0.0.**
+
+**The configuration manager of nnUNetv2 was changed in newer versions and is not yet compatible with this nnUnet trainer script!!!**
+
+**Please use nnunetv2=2.0.0 for this repo!**
 
 
 Training code for PGPS/PGPSplus/RPSS can be found in directory:
