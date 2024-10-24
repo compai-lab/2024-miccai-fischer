@@ -175,9 +175,9 @@ class nnUNetTrainer_PGPSplus(nnUNetTrainer):
         # emissions = tracker.stop()
 
 
-        print(f"Emissions : {1000 * emissions} g CO₂") 
-        for task_name, task in tracker._tasks.items():
-            self.print_to_log_file( f"Emissions : {1000 * task.emissions_data.emissions} g CO₂ for task {task_name}")
+        # print(f"Emissions : {1000 * emissions} g CO₂") 
+        # for task_name, task in tracker._tasks.items():
+        #     self.print_to_log_file( f"Emissions : {1000 * task.emissions_data.emissions} g CO₂ for task {task_name}")
 
 
         # test model on test split
