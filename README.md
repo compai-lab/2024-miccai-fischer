@@ -1,6 +1,7 @@
 # Code for Progressive Growing of Patch Size Curriculum implemented into the nnUNet framework.
 
 MICCAI2024-Paper: https://papers.miccai.org/miccai-2024/paper/2008_paper.pdf
+
 Arxiv-Paper: https://arxiv.org/abs/2407.07853
 
 This is the implementation from our MICCAI2024 paper "Progressive Growing of Patch Size: Resource-Efficient Curriculum Learning for Dense Prediction Tasks". Abstract. In this work, we introduce Progressive Growing of Patch
