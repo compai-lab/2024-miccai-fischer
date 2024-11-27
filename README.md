@@ -1,5 +1,8 @@
 # Code for Progressive Growing of Patch Size Curriculum implemented into the nnUNet framework.
 
+MICCAI2024-Paper: https://papers.miccai.org/miccai-2024/paper/2008_paper.pdf
+Arxiv-Paper: https://arxiv.org/abs/2407.07853
+
 This is the implementation from our MICCAI2024 paper "Progressive Growing of Patch Size: Resource-Efficient Curriculum Learning for Dense Prediction Tasks". Abstract. In this work, we introduce Progressive Growing of Patch
 Size, a resource-efficient implicit curriculum learning approach for dense prediction tasks. Our curriculum approach is defined by growing the patch size during model training, which gradually increases the task’s difficulty. We integrated our curriculum into the nnU-Net framework and evaluated the methodology on all 10 tasks of the Medical Segmentation Decathlon. With our approach, we are able to substantially reduce runtime, computational costs, and CO2 emissions of network training compared to classical constant patch size training. In our experiments, the curriculum approach resulted in improved convergence. 
 
