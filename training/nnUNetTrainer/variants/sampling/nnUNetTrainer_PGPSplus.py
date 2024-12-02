@@ -12,9 +12,9 @@ import numpy as np
 from batchgenerators.utilities.file_and_folder_operations import join, load_json, isfile, save_json, maybe_mkdir_p
 
 # track CO2 emissions
-from codecarbon import EmissionsTracker
+# from codecarbon import EmissionsTracker
 
-class nnUNetTrainer_PGPS+(nnUNetTrainer):
+class nnUNetTrainer_PGPSplus(nnUNetTrainer):
 
     def plan_batch_size(self):
         """
@@ -97,8 +97,8 @@ class nnUNetTrainer_PGPS+(nnUNetTrainer):
         self.stage = 0
         self.plan_batch_size()
         # start tracking C02 emissions
-        tracker = EmissionsTracker(output_dir=self.output_folder)
-        tracker.start()
+        # tracker = EmissionsTracker(output_dir=self.output_folder)
+        # tracker.start()
         for epoch in range(self.current_epoch, self.num_epochs):
             if not self.initialized:
                 # initialize training with smallest possible patchsize (depends on num of pooling operations) 
@@ -152,7 +152,7 @@ class nnUNetTrainer_PGPS+(nnUNetTrainer):
                 self.dataloader_train_cur_patch_size, _ = self.get_dataloaders()
 
             # training process: train on current patchsize
-            tracker.start_task(str('Task' +  str(self.patch_size[0]) + 'x' + str(self.patch_size[1]) + 'x' + str(self.patch_size[2])))
+            # tracker.start_task(str('Task' +  str(self.patch_size[0]) + 'x' + str(self.patch_size[1]) + 'x' + str(self.patch_size[2])))
             self.on_epoch_start() 
             self.on_train_epoch_start() 
             train_outputs = [] 
@@ -168,16 +168,16 @@ class nnUNetTrainer_PGPS+(nnUNetTrainer):
                     val_outputs.append(self.validation_step(next(self.dataloader_val_max_patch_size))) 
             self.on_validation_epoch_end(val_outputs) 
             self.on_epoch_end()
-            emissions = tracker.stop_task()
-            print(emissions)
+            # emissions = tracker.stop_task()
+            # print(emissions)
 
         # finish tracking
-        emissions = tracker.stop()
+        # emissions = tracker.stop()
 
 
-        print(f"Emissions : {1000 * emissions} g CO₂") 
-        for task_name, task in tracker._tasks.items():
-            self.print_to_log_file( f"Emissions : {1000 * task.emissions_data.emissions} g CO₂ for task {task_name}")
+        # print(f"Emissions : {1000 * emissions} g CO₂") 
+        # for task_name, task in tracker._tasks.items():
+        #     self.print_to_log_file( f"Emissions : {1000 * task.emissions_data.emissions} g CO₂ for task {task_name}")
 
 
         # test model on test split
