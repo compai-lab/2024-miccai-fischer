@@ -35,6 +35,7 @@ Other adjustments:
 - ./utilities/plans_handling/plans_handler.py
 
 
+To install the PGPS_nnUNet you can clone this GitHub Repo via:
 ```
 git clone https://github.com/StefanFischer/PGPS_nnUNet.git
 cd PGPS_nnUNet
