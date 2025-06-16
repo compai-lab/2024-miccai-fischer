@@ -31,12 +31,16 @@ Training code for PGPS/PGPSplus/RPSS can be found in directory:
 - ./training/nnUNetTrainer/variants/sampling/nnUNetTrainer_PGPSplus.py
 - ./training/nnUNetTrainer/variants/sampling/nnUNetTrainer_RPSS.py
 
-For using the code, please install nnUNet from https://github.com/MIC-DKFZ/nnUNet according to their documentation: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/installation_instructions.md.
-After that you need to copy the training code plus a plans handler file from THIS github repo into the python site-package nnUNetv2 installation folder. This files have to be copied into the existing nnunet repository:
-- ./training/nnUNetTrainer/variants/sampling/nnUNetTrainer_PGPS.py
-- ./training/nnUNetTrainer/variants/sampling/nnUNetTrainer_PGPSplus.py
-- ./training/nnUNetTrainer/variants/sampling/nnUNetTrainer_RPSS.py
+Other adjustments:
 - ./utilities/plans_handling/plans_handler.py
+
+
+```
+git clone https://github.com/StefanFischer/PGPS_nnUNet.git
+cd PGPS_nnUNet
+pip install -e .
+```
+Besides you also need to define the environment variables of nnUNetv2: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/setting_up_paths.md
 
 ## Usage
 
