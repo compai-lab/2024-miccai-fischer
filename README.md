@@ -1,3 +1,8 @@
+# There is an updated version of the Progressive Growing of Patch Size Curriculum online
+
+We published an extension about the Progressive Growing of Patch Size Curriculum at MedIA (https://www.sciencedirect.com/science/article/pii/S1361841526002641), for which we further improved the convergence and final segmentation performance beyond our MICCAI paper (https://papers.miccai.org/miccai-2024/paper/2008_paper.pdf). The updated code can be found in the new GitHub Repo (https://github.com/compai-lab/2025-MedIA-fischer/releases/tag/v2.6.2)
+
+
 # Code for Progressive Growing of Patch Size Curriculum implemented into the nnUNet framework.
 
 MICCAI2024-Paper: https://papers.miccai.org/miccai-2024/paper/2008_paper.pdf
